@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    font-family: 'Qwigley', cursive;
+    /* font-family: 'Qwigley', cursive; */
+    font-family: 'Tillana', cursive;
 }
 
 .parallax {
@@ -12,23 +13,23 @@ body {
 }
 
 .parallax-first {
-    background-image: url('../img/a.jpg');
+    background-image: url('../img/man.jpg');
 }
 
 .parallax-second {
-    background-image: url('../img/b.jpg');
+    background-image: url('../img/forest.jpg');
 }
 
 .parallax-third {
-    background-image: url('../img/c.jpg');
+    background-image: url('../img/lamp.jpg');
 }
 
 .parallax-fourth {
-    background-image: url('../img/d.jpg');
+    background-image: url('../img/cycle.jpg');
 }
 
 .parallax-fifth {
-    background-image: url('../img/e.jpg');
+    background-image: url('../img/pen.jpg');
 }
 
 .parallax-sixth {
@@ -40,19 +41,11 @@ body {
 }
 
 .parallax-eight {
-    background-image: url('../img/h.jpg');
+    background-image: url('../img/city.jpg');
 }
 
 .parallax-nine {
-    background-image: url('../img/i.jpg');
-}
-
-.parallax-ten {
-    background-image: url('../img/j.jpg');
-}
-
-.parallax-eleven {
-    background-image: url('../img/k.jpg');
+    background-image: url('../img/bucket.jpg');
 }
 
 .menu-logo {
@@ -73,26 +66,33 @@ body {
 
 .overlay {
     height: 100%;
+    font-family: sans-serif;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: -20px;
-    background-color: beige;
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #fff 79px, #fff 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
     overflow-x: hidden;
     transition: 0.6s;
     margin-right: 20px;
 }
 
 .overlay-content {
+    top: 50%;
     position: relative;
-    top: 25%;
+    left: 50%;
     width: 100%;
     text-align: center;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 .overlay-content li {
     list-style: none;
+    margin: 0;
 }
 
 .overlay a {
@@ -117,9 +117,10 @@ body {
 
 .content {
     text-align: center;
-    color: #000066;
+    color: #fff;
     padding: 10px;
     letter-spacing: 1.2px;
+    background-color: #484ac5;
 }
 
 footer {
@@ -137,7 +138,7 @@ a {
 }
 
 .bucketlist {
-    background-image: url('../img/l.jpg');
+    background-image: url('../img/travel.jpg');
     height: 90vh;
     background-attachment: fixed;
     background-position: center;
@@ -149,8 +150,8 @@ a {
     background-color: #fff;
     background-image: linear-gradient(90deg, transparent 79px, #fff 79px, #fff 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
     background-size: 100% 1.2em;
-    height: 100vh;
-    margin: 0 60% 0 0;
+    height: 90vh;
+    margin: 0 50% 0 0;
 }
 
 .title {
@@ -176,12 +177,12 @@ a {
     background-color: #fff;
     background-image: linear-gradient(90deg, transparent 79px, #fff 79px, #fff 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
     background-size: 100% 1.2em;
-    height: 100vh;
-    margin: 0 0 0 60%;
+    height: 90vh;
+    margin: 0 0 0 50%;
 }
 
 .prose p {
-    font-size: 24px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 2px;
@@ -204,8 +205,16 @@ a:hover {
     opacity: 0.7;
 }
 
-@media screen and (max-width: 500px) {
+.profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid gray;
+    box-shadow: 0px 0px 21px #2b1d18;
+}
 
+@media screen and (max-width: 500px) {
     .quotes .container,
     .bucketlist .container {
         margin: 0;
@@ -217,7 +226,6 @@ a:hover {
     .parallax {
         background-attachment: fixed;
         background-size: 100%;
-
     }
     .content {
         font-size: 18px;
