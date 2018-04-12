@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: 'Qwigley', cursive;
+}
+
+.parallax {
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-first {
+    background-image: url('../img/a.jpg');
+}
+
+.parallax-second {
+    background-image: url('../img/b.jpg');
+}
+
+.parallax-third {
+    background-image: url('../img/c.jpg');
+}
+
+.parallax-fourth {
+    background-image: url('../img/d.jpg');
+}
+
+.parallax-fifth {
+    background-image: url('../img/e.jpg');
+}
+
+.parallax-sixth {
+    background-image: url('../img/bike.jpg');
+}
+
+.parallax-seventh {
+    background-image: url('../img/rain.jpg');
+}
+
+.parallax-eight {
+    background-image: url('../img/h.jpg');
+}
+
+.parallax-nine {
+    background-image: url('../img/i.jpg');
+}
+
+.parallax-ten {
+    background-image: url('../img/j.jpg');
+}
+
+.parallax-eleven {
+    background-image: url('../img/k.jpg');
+}
+
+.menu-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -20px;
+    background-color: beige;
+    overflow-x: hidden;
+    transition: 0.6s;
+    margin-right: 20px;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-content li {
+    list-style: none;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #000;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -14px;
+    right: 20px;
+    font-size: 40px;
+}
+
+.overlay a:hover {
+    color: khaki;
+}
+
+.content {
+    text-align: center;
+    color: #000066;
+    padding: 10px;
+    letter-spacing: 1.2px;
+}
+
+footer {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #00a8b5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bucketlist {
+    background-image: url('../img/l.jpg');
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bucketlist .container {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #fff 79px, #fff 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    height: 100vh;
+    margin: 0 60% 0 0;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+}
+
+.list {
+    font-size: 19px;
+    font-family: monospace
+}
+
+.quotes {
+    background-image: url('../img/pen.jpg');
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quotes .container {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, transparent 79px, #fff 79px, #fff 81px, transparent 81px), linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    height: 100vh;
+    margin: 0 0 0 60%;
+}
+
+.prose p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.info {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.links a {
+    display: inline;
+    font-size: 30px;
+    color: #fff;
+    margin: 0 15px 0 0;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 500px) {
+
+    .quotes .container,
+    .bucketlist .container {
+        margin: 0;
+    }
+    .links a,
+    .info {
+        font-size: 15px;
+    }
+    .parallax {
+        background-attachment: fixed;
+        background-size: 100%;
+
+    }
+    .content {
+        font-size: 18px;
+        color: #000;
+    }
+}
