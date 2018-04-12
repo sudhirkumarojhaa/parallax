@@ -1,7 +1,26 @@
+/* Global css */
+
 body {
     margin: 0;
     font-family: 'Qwigley', cursive;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* parallax effect css */
 
 .parallax {
     height: 90vh;
@@ -47,6 +66,8 @@ body {
     background-image: url('../img/bucket.jpg');
 }
 
+/* menu css */
+
 .menu-logo {
     width: 40px;
     height: 40px;
@@ -62,6 +83,8 @@ body {
     align-items: center;
     background-color: transparent;
 }
+
+/* overlay css */
 
 .overlay {
     height: 100%;
@@ -94,15 +117,6 @@ body {
     margin: 0;
 }
 
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 26px;
-    color: #000;
-    display: inline-block;
-    transition: 0.3s;
-}
-
 .overlay .closebtn {
     position: absolute;
     top: -14px;
@@ -110,16 +124,17 @@ body {
     font-size: 40px;
 }
 
-.overlay a:hover {
-    color: khaki;
-}
+/* content css  */
 
 .content {
     text-align: center;
-    color: #fff;
-    padding: 10px;
+    color: #000;
     letter-spacing: 1.2px;
-    background-color: #484ac5;
+    background-color: #fff;
+    font-size: 24px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 2px #000;
+    padding: 10px;
 }
 
 footer {
@@ -132,9 +147,7 @@ footer {
     align-items: center;
 }
 
-a {
-    text-decoration: none;
-}
+/* bucketlist css */
 
 .bucketlist {
     background-image: url('../img/travel.jpg');
@@ -200,17 +213,32 @@ a {
     margin: 0 15px 0 0;
 }
 
-a:hover {
-    opacity: 0.7;
-}
-
 .profile {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid gray;
-    box-shadow: 0px 0px 21px #2b1d18;
+    box-shadow: 0 0 21px #2b1d18;
+}
+
+.designation {
+    position: relative;
+}
+
+.rotate {
+    color: orange;
+    animation: anim 10s linear infinite;
+    opacity: 0;
+}
+
+@keyframes anim {
+   0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 500px) {
