@@ -7,11 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Parallax</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
+
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+  <link href="css/story.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
+<div id="overlay">
+  <div class="typewriter">
+    <h3>We will meet in parallel universe ...</h3>
+  </div>
+</div>
+
 <body>
+
   <section class="menu">
     <div class="brand">
       <a href="./index.html">
@@ -23,7 +34,8 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <div class="overlay-content">
         <img src="img/profile.jpg" alt="" class="profile">
-        <h3 class="designation">Front- <span class="rotate">End</span> Developer</h3>
+        <h3 class="designation">Front-
+          <span class="rotate">End</span> Developer</h3>
         <h4>Technologies known</h4>
         <ul>
           <li>HTML 5</li>
@@ -41,7 +53,8 @@
     <div class="parallax-first parallax"></div>
     <div class="content">
       <h4>Its in the dark and solitude I find peace and feel alive , because in the light I can see masks ,people don't exist
-        anymore..</h4>
+        anymore..
+      </h4>
     </div>
 
     <!-- parallax first section ends here -->
@@ -144,6 +157,20 @@
     </div>
   </section>
 
+  <section>
+
+    <div class="well animated rotateInDownRight" style="height: 300px; background: rgb(52, 73, 94); opacity: 1;" data-sb="zenFadeInUp,zenFadeInRight,zenFadeInLeft,zenFadeInUpBig,zenFadeInRightBig,zenFadeInLeftBig"
+      data-sb-hide="fadeOutUp"></div>
+    <div class="well animated rotateInDownLeft" " style="height: 300px; background: rgb(22, 160, 133); opacity: 1;
+      " data-sb="zenFadeInUp,zenFadeInRight,zenFadeInLeft,zenFadeInUpBig,zenFadeInRightBig,zenFadeInLeftBig "
+      data-sb-hide="fadeOutUp "></div>
+    <div class="well animated zenFadeInLeftBig "" style="height: 300px; background: rgb(52, 73, 94); opacity: 1;" data-sb="zenFadeInUp,zenFadeInRight,zenFadeInLeft,zenFadeInUpBig,zenFadeInRightBig,zenFadeInLeftBig"
+      data-sb-hide="fadeOutUp"></div>
+    <div class="well sb-effect-displayed animated zenFadeInLeft" style="height: 300px; background: rgb(39, 174, 96); opacity: 1;"
+      data-sb="zenFadeInUp,zenFadeInRight,zenFadeInLeft,zenFadeInUpBig,zenFadeInRightBig,zenFadeInLeftBig" data-sb-hide="fadeOutUp"></div>
+    </div>
+  </section>
+
   <footer>
     <div class="info">
       Sudhir Kumar
@@ -164,6 +191,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
+  <script src="js/story.js"></script>
   <script src="js/custom.js"></script>
 </body>
 
