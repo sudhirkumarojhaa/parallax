@@ -21,69 +21,6 @@ a {
     text-decoration: none;
 }
 
-#overlay {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(7, 15, 59);
-    opacity: 1;
-    z-index: 1001;
-    display: none;
-}
-
-.typewriter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.typewriter h3 {
-    color: #fff;
-    font-family: "Courier";
-    font-size: 24px;
-    font-weight: 900;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 8s steps(30, end), blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent
-    }
-    50% {
-        border-color: black
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .typewriter h3 {
-        font-size: 16px;
-    }
-}
-
 /* parallax effect css */
 
 .parallax {
@@ -99,23 +36,23 @@ a {
 }
 
 .parallax-second {
-    background-image: url('../img/forest.jpg');
+    background-image: url('../img/compass.jpg');
 }
 
 .parallax-third {
-    background-image: url('../img/lamp.jpg');
+    background-image: url('../img/boy.jpg');
 }
 
 .parallax-fourth {
-    background-image: url('../img/cycle.jpg');
+    background-image: url('../img/magic.jpg');
 }
 
 .parallax-fifth {
-    background-image: url('../img/pen.jpg');
+    background-image: url('../img/snail.jpg');
 }
 
 .parallax-sixth {
-    background-image: url('../img/bike.jpg');
+    background-image: url('../img/two.jpg');
 }
 
 .parallax-seventh {
@@ -195,10 +132,11 @@ a {
     color: #000;
     letter-spacing: 1.2px;
     background-color: #fff;
-    font-size: 24px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    font-size: 44px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.7);
     box-shadow: 2px 2px 2px #000;
     padding: 10px;
+    font-family: 'Qwigley', cursive;
 }
 
 footer {
@@ -305,6 +243,69 @@ footer {
     }
 }
 
+#overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #0c9;
+    opacity: 1;
+    z-index: 1001;
+    display: none;
+}
+
+.typewriter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.typewriter h3 {
+    color: #000;
+    font-family: "Courier";
+    font-size: 24px;
+    font-weight: 900;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 8s steps(30, end),blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .typewriter h3 {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .quotes .container,
     .bucketlist .container {
@@ -313,13 +314,5 @@ footer {
     .links a,
     .info {
         font-size: 15px;
-    }
-    .parallax {
-        background-attachment: fixed;
-        background-size: 100%;
-    }
-    .content {
-        font-size: 18px;
-        color: #000;
     }
 }
