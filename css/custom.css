@@ -1,27 +1,7 @@
-Global css
-/* css starts here */
-
 body {
     margin: 0;
     font-family: 'Qwigley', cursive;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
-p,
-a {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-/* parallax effect css */
 
 .parallax {
     height: 90vh;
@@ -70,8 +50,8 @@ a {
 /* menu css */
 
 .menu-logo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 .menu {
@@ -116,13 +96,31 @@ a {
 .overlay-content li {
     list-style: none;
     margin: 0;
+    font-size: 24px;
 }
 
 .overlay .closebtn {
     position: absolute;
-    top: -14px;
-    right: 20px;
+    top: 10%;
+    right: 40%;
+    text-decoration: none;
+    color: #999;
     font-size: 40px;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px 15px;
+    color: #fff;
+    width: 200px;
+    text-transform: uppercase;
+    margin: 5px auto;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 /* content css  */
@@ -196,7 +194,7 @@ footer {
 }
 
 .prose p {
-    font-size: 14px;
+    font-size: 24px;
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 2px;
@@ -216,31 +214,20 @@ footer {
 }
 
 .profile {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid gray;
-    box-shadow: 0 0 21px #2b1d18;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #000;
+    box-shadow: 0 0 10px #2b1d18;
 }
 
 .designation {
     position: relative;
-}
-
-.rotate {
-    color: orange;
-    animation: anim 10s linear infinite;
-    opacity: 0;
-}
-
-@keyframes anim {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    font-size: 30px;
+    font-weight: lighter;
+    color: #000;
 }
 
 #overlay {
@@ -274,7 +261,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 8s steps(30, end),blink-caret .5s step-end infinite;
+    animation: typing 8s steps(30, end), blink-caret .5s step-end infinite;
 }
 
 /* The typing effect */
@@ -304,6 +291,10 @@ footer {
     .typewriter h3 {
         font-size: 16px;
     }
+    .overlay .closebtn {
+        top: 0%;
+        right: 8%;
+      }
 }
 
 @media screen and (max-width: 500px) {
