@@ -1,3 +1,69 @@
+.splashscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.space {
+    margin-left: 10px;
+}
+
+.line1 {
+    width: 10px;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    -webkit-animation: myfirst 75s 2;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate;
+    /* Safari 4.0 - 8.0 */
+    animation: myfirst 58s;
+    animation-direction: alternate;
+}
+
+.line2 {
+    width: 10px;
+    margin-left: 10px;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    -webkit-animation: myfirst 75s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate;
+    /* Safari 4.0 - 8.0 */
+    animation: myfirst2 58s;
+    animation-direction: alternate;
+}
+
+@keyframes myfirst {
+    0% {
+        background: #000;
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        background: #000;
+        left: 0px;
+        top: 1000px;
+    }
+}
+
+@keyframes myfirst2 {
+    0% {
+        background: #000;
+        left: 0px;
+        bottom: 0px;
+    }
+    100% {
+        background: #000;
+        left: 0px;
+        bottom: 1000px;
+    }
+}
+
 body {
     margin: 0;
     font-family: 'Qwigley', cursive;
@@ -257,70 +323,5 @@ footer {
     .links a,
     .info {
         font-size: 15px;
-    }
-}
-
-.splashscreen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: monospace;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-}
-
-.space {
-    margin-left: 10px;
-}
-
-.line1 {
-    width: 10px;
-    height: 100vh;
-    background: #000;
-    position: relative;
-    -webkit-animation: myfirst 75s 2;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-direction: alternate;
-    /* Safari 4.0 - 8.0 */
-    animation: myfirst 58s ;
-    animation-direction: alternate;
-}
-
-.line2 {
-    width: 10px;
-    margin-left: 10px;
-    height: 100vh;
-    background: #000;
-    position: relative;
-    -webkit-animation: myfirst 75s ;
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-direction: alternate;
-    /* Safari 4.0 - 8.0 */
-    animation: myfirst2 58s ;
-    animation-direction: alternate;
-}
-@keyframes myfirst {
-    0% {
-        background: #000;
-        left: 0px;
-        top: 0px;
-    }
-    100% {
-        background: #000;
-        left: 0px;
-        top: 1000px;
-    }
-}
-
-@keyframes myfirst2 {
-    0% {
-        background: #000;
-        left: 0px;
-        bottom: 0px;
-    }
-    100% {
-        background: #000;
-        left: 0px;
-        bottom: 1000px;
     }
 }
