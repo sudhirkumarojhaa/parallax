@@ -3,7 +3,7 @@ $("#overlay").show();
 setTimeout(function () {
   $("#overlay").fadeOut();
   $("body").show(300);
-}, 14000);
+}, 1000);
 
 //menu css
 function openNav() {
