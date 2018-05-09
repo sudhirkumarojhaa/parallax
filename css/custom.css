@@ -54,12 +54,12 @@
 @keyframes myfirst2 {
     0% {
         background: #000;
-        left: 0px;
-        bottom: 0px;
+        left: 0;
+        bottom: 0;
     }
     100% {
         background: #000;
-        left: 0px;
+        left: 0;
         bottom: 1000px;
     }
 }
@@ -67,75 +67,74 @@
 body {
     margin: 0;
     font-family: 'Qwigley', cursive;
+    background: #000;
 }
 
 .parallax {
-    height: 90vh;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 30px;
 }
 
 .parallax-first {
+    position: relative;
     background-image: url('../img/man.jpg');
 }
 
 .parallax-second {
+    position: relative;
     background-image: url('../img/compass.jpg');
 }
 
 .parallax-third {
+    position: relative;
     background-image: url('../img/boy.jpg');
 }
 
 .parallax-fourth {
+    position: relative;
     background-image: url('../img/magic.jpg');
 }
 
 .parallax-fifth {
+    position: relative;
     background-image: url('../img/snail.jpg');
 }
 
 .parallax-sixth {
+    position: relative;
     background-image: url('../img/two.jpg');
 }
 
 .parallax-seventh {
+    position: relative;
     background-image: url('../img/rain.jpg');
 }
 
 .parallax-eight {
+    position: relative;
     background-image: url('../img/city.jpg');
 }
 
 .parallax-nine {
+    position: relative;
     background-image: url('../img/bucket.jpg');
-}
-
-header h2 {
-    margin: 0;
-    padding: 20px 0;
-    font-size: 40px;
-    text-align: center;
-    background: brown;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* content css  */
 
 .content {
     text-align: center;
-    color: #000000;
-    letter-spacing: 1.2px;
+    color: #fff;
     font-size: 34px;
-    font-family: 'Qwigley', cursive;
-}
-
-.content h3 {
-    padding: 20px;
-    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 2px 2px #000;
 }
 
 
@@ -244,7 +243,7 @@ footer {
     display: none;
 }
 
-<header><h2>gallery Storybox</h2><h6 class="subtitle">sudhir kumar</h6></header>@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .quotes .container,
     .bucketlist .container {
         margin: 0;
@@ -252,5 +251,8 @@ footer {
     .links a,
     .info {
         font-size: 15px;
+    }
+    .content {
+        font-size: 20px;
     }
 }
